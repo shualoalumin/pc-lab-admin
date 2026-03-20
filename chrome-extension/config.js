@@ -1,0 +1,6 @@
+export const SUPABASE_URL = 'https://qfxgnoipphoedvxdgfnj.supabase.co'
+export const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFmeGdub2lwcGhvZWR2eGRnZm5qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5MTA3NTUsImV4cCI6MjA4OTQ4Njc1NX0.rSMHTTEcmYGvf1XWiPY60KtqBRzeqS5uY6fILv0lMro'
+
+export const LOG_BATCH_INTERVAL_MS = 5000
+export const BLOCKED_DOMAINS_SYNC_INTERVAL_MIN = 5
+export const VIOLATION_REDIRECT_URL = 'about:blank'

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 320px;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #fff;
+      color: #0f172a;
+    }
+    .header {
+      padding: 16px;
+      background: #2563eb;
+      color: white;
+      text-align: center;
+    }
+    .header h1 { font-size: 16px; font-weight: 600; }
+    .header p { font-size: 12px; opacity: 0.8; margin-top: 4px; }
+    .content { padding: 16px; }
+    .status-card {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 12px;
+    }
+    .status-card.active { border-color: #22c55e; background: #f0fdf4; }
+    .status-card.locked { border-color: #ef4444; background: #fef2f2; }
+    .status-card.disconnected { border-color: #f59e0b; background: #fffbeb; }
+    .status-label { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+    .status-value { font-size: 14px; font-weight: 600; margin-top: 2px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .setup-form { display: flex; flex-direction: column; gap: 10px; }
+    .setup-form label { font-size: 12px; font-weight: 500; color: #64748b; }
+    .setup-form input {
+      width: 100%; padding: 8px 12px;
+      border: 1px solid #e2e8f0; border-radius: 6px;
+      font-size: 14px; outline: none;
+    }
+    .setup-form input:focus { border-color: #2563eb; }
+    .btn {
+      width: 100%; padding: 10px;
+      border: none; border-radius: 6px;
+      font-size: 14px; font-weight: 500;
+      cursor: pointer; transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+    .btn-primary { background: #2563eb; color: white; }
+    .btn-danger { background: #ef4444; color: white; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>PC Lab Monitor</h1>
+    <p>컴퓨터실 활동 모니터링</p>
+  </div>
+
+  <div class="content" id="app">
+    <div id="loading">
+      <p style="text-align:center;color:#64748b;padding:20px;">로딩 중...</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
